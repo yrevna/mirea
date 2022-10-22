@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+:root {
+    --default-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.81);
+}
+
+body {
+    background: #141414;
+    color: rgb(236, 253, 0);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: rgb(201, 201, 201);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+body>*:first-child {
+    margin-top: 0;
+}
+
+.topics-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.topics-block > div {
+    flex: 1 1 400px;
+    margin: 0.25rem;
+    padding: 0.25rem 1.25rem;
+    border-radius: 0.25rem;
+    box-shadow: var(--default-shadow);
+    background: rgba(255, 255, 255, 0.045);
+    
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.profile-img {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: var(--default-shadow);
+    flex-shrink: 0;
+}
+
+.profile-img > img {
+    position: absolute;
+    width: 100%;
+}
+
+.profile-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.profile-info > h2:first-child {
+    margin-top: 0;
+}
+
+.profile-info {
+    padding: 0rem 1.25rem;
+    flex-grow: 1;
+}
