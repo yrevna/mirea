@@ -5,21 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home yr.evna page</title>
     <link rel="stylesheet" href="/css/main.css" />
+    <link
+      href="/assets/font-awesome/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="/assets/font-awesome/css/brands.min.css" rel="stylesheet" />
+    <link href="/assets/font-awesome/css/solid.min.css" rel="stylesheet" />
   </head>
   <body>
     <h1>Разработка веб-приложений</h1>
     <div class="container">
       <div class="profile-block">
-      <div class="profile-img">
-        <img src="/assets/5E2A6821.jpg" alt="Фото Неумоиной В.Ю." />
+        <div class="profile-img-wrapper">
+          <div class="profile-img">
+            <img src="/assets/5E2A6821.jpg" alt="Фото Неумоиной В.Ю." />
+          </div>
+          <div class="profile-icons">
+            <a href="mailto:yrevna.mirea@mail.ru">
+              <i class="fa-solid fa-square-envelope"></i
+            ></a>
+            <a target="_blank" href="https://t.me/yrevna">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+            <a target="_blank" href="https://vk.com/yr.evna">
+              <i class="fa-brands fa-vk"></i
+            ></a>
+          </div>
+        </div>
+        <div class="profile-info">
+          <h2>Неумоина Виктория Юрьевна</h2>
+          <div>
+            <dl>
+              <span>
+                <dt>Пол</dt>
+                <dd><i class="fa-solid fa-person-dress"></i></dd>
+              </span>
+              <span>
+                <dt>Возраст</dt>
+                <dd id="age">22</dd>
+              </span>
+            </dl>
+          </div>
+          <div>
+            <dl>
+              <dt>Группа</dt>
+              <dd>ЭЛБО-01-19</dd>
+            </dl>
+          </div>
+          <div>
+            <dl>
+              <dt>Направление подготовки</dt>
+              <dd>Лазерная техника и лазерные технологии</dd>
+            </dl>
+          </div>
+          <div>
+            <dl>
+              <dt>Специальность</dt>
+              <dd>Лазерные оптико-электронные приборы</dd>
+            </dl>
+          </div>
+        </div>
       </div>
-      <div class="profile-info">
-      <h2>Неумоина Виктория Юрьевна</h2>
-      <p>
-        
-      </p>
-    </div>
-    </div>
       <div class="topics-block">
         <div>
           <h2>Создание веб-интерфейсов</h2>
@@ -54,5 +100,10 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="/index.js" type="text/javascript"></script>
   </body>
 </html>
