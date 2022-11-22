@@ -1,0 +1,18 @@
+h2, h3, i {
+    color: blue;
+}
+
+b {
+    color: red;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-indent: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
