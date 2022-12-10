@@ -1,24 +1,26 @@
-var n=10;
-document.write("<table>");
-for (var y=0; y<n; y++){
-    document.write("<tr>");
-    for (var x=0; x<n; x++){
-        let color='aqua';
-        if (x+y>=n-2) color='darkblue';
-        document.write("<td bgcolor='"+ color +"' width='30' height='30'></td>");
-    }
-    document.write("</tr>");
-}
-document.write("</table>");
+const n = 10;
 
-document.write("<table>");
-for (var y=0; y<n; y++){
+function createTable(n, bgcolor, mainColor, size, condition) {
+  document.write("<table>");
+  for (let y = 0; y < n; y++) {
     document.write("<tr>");
-    for (var x=0; x<n; x++){
-        let color='violet';
-        if ((x+y+2)%4==0) color='lime';
-        document.write("<td bgcolor='"+ color +"' width='30' height='30'></td>");
+    for (let x = 0; x < n; x++) {
+      const color = condition(x, y, n) ? mainColor : bgcolor;
+      document.write(
+        "<td bgcolor='" +
+          color +
+          "' width='" +
+          size +
+          "' height='" +
+          size +
+          "'></td>"
+      );
     }
     document.write("</tr>");
+  }
+  document.write("</table>");
 }
-document.write("</table>");
+
+createTable(n, "aqua", "darkblue", 30, (x, y, n) => x + y >= n - 2);
+
+createTable(n, "violet", "lime", 30, (x, y, n) => (x + y + 2) % 4 == 0);
