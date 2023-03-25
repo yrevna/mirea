@@ -1,0 +1,53 @@
+:root {
+    --border-radius: 10px;
+}
+
+body {
+    background-color: yellow;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: blue;
+}
+
+button {
+    background-color: yellow;
+    color: blue;
+    border: 2px solid rgba(0, 0, 0, 0.143);
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    max-width: 500px;
+}
+
+.container > img {
+    width: 100%;
+    height: auto;
+}
+
+.container > button {
+    width: 100%;
+    height: 100%;
+}
+
+.container > input {
+    width: 100%;
+    grid-column-end: span 3;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container > button:first-of-type {
+    border-radius: var(--border-radius) 0px 0px var(--border-radius);
+}
+
+.container > button:last-of-type {
+    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+}

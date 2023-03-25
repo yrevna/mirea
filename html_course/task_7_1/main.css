@@ -1,0 +1,26 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(44, 44, 169);
+}
+
+.gallery {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.photo {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 300px;
+}
+
+.photo img {
+    width: auto;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.202);
+}

@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  font-size: small;
+}
+
+.calculator {
+  background-color: aliceblue;
+  border: 1px solid;
+  border-radius: 30px;
+  border-color: rgba(0, 0, 0, 0.409);
+  width: 400px;
+  padding: 30px;
+}
+
+h2 {
+margin-top: 0;
+color: rgba(0, 0, 0, 0.409);
+}
+
+form > * {
+    display: block;
+}
+
+form > label > input {
+    display: block;
+}
+
+.calculator > label > input  {
+    display: block;
+}
+
+.radio > label {
+    display: block;
+    margin: 5px;
+}
+
+label {
+    margin: 10px 0;
+}
+
+input:not([type=radio]){
+    border: 0.5px solid;
+    border-radius: 30px;
+    border-color: rgba(0, 0, 0, 0.409);
+    width: 100%;
+    padding: 5px;
+}
+
+input[type=button] {
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.409);
+    color: white;
+}

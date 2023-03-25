@@ -1,0 +1,22 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    color: rgb(44, 44, 169);
+    text-align: center;
+}
+
+img {
+    float: left;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.202);
+}
+
+.part2 > img {
+    float: right;
+}
+
+.history {
+    text-align: justify;
+}

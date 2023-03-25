@@ -1,0 +1,32 @@
+body {
+    background-color: aliceblue;
+}
+
+.wrapper {
+    text-align: justify;
+}
+
+h1 {
+    padding: 10px;
+    background-color: aliceblue;
+    color: rgb(44, 44, 169);
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: auto;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.202);
+    float: left;
+    margin: 20px;
+}
+
+.scince > img {
+    float: right;
+}

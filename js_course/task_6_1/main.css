@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+    color: red;
+}
+
+body {
+    background-color: rgb(113, 234, 142);
+}
+
+form {
+    width: 300px;
+}
+
+form > * {
+    display: block;
+}
+
+form > label {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+form > button {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
