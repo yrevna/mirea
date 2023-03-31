@@ -54,4 +54,9 @@ input[type=button] {
     margin-bottom: 10px;
     background: rgba(0, 0, 0, 0.409);
     color: white;
+    cursor: pointer;
+}
+
+input[type=button]:active {
+    transform: scale(0.99);
 }

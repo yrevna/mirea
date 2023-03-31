@@ -6,22 +6,22 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <script src="script.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
     <div class="calculator">
       <h2>Простой калькулятор</h2>
       <form>
-        <label>Введите первое число <input type="text" id="1" /></label>
-        <label>Введите второе число <input type="text" id="2" /></label>
+        <label>Введите первое число <input type="number" id="num1" /></label>
+        <label>Введите второе число <input type="number" id="num2" /></label>
         <label>Выберите операцию</label>
         <div class="radio">
-          <label><input type="radio" id="check1" />+</label>
-          <label><input type="radio" id="check2" />-</label>
-          <label><input type="radio" id="check3" />*</label>
+          <label><input type="radio" name="operation" id="check1" />+</label>
+          <label><input type="radio" name="operation" id="check2" />-</label>
+          <label><input type="radio" name="operation" id="check3" />*</label>
         </div>
-        <input type="button" value="Результат" />
-        <input type="button" value="Очистить" />
+        <input type="button" value="Результат" onclick="calculate()" />
+        <input type="button" value="Очистить" onclick="clearInput()" />
         <hr />
-        <label>Результат <input type="text" id="ans" /></label>
+        <label>Результат <input type="number" id="ans" readonly/></label>
       </form>
     </div>
   </body>
