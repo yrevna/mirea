@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+img#web {
+  position: absolute;
+  left: 0;
+  top: 100;
+}
+
+img#spider {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  transition: left 1s linear, top 500ms linear;
+  left: 0;
+  top: 0;
+}

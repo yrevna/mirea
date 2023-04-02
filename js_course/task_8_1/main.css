@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  border: 10px inset rgb(1, 1, 85);
+}
+
+input[type="button"] {
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
