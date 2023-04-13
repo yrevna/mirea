@@ -1,0 +1,162 @@
+:root {
+  --bg-color: aliceblue;
+  --main-color: blue;
+}
+
+form > div > * {
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.form {
+  width: 100%;
+  max-width: 850px;
+  margin: 0;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container {
+  text-align: center;
+  max-width: 500px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-input,
+.surname-input,
+.email-input,
+.tel-input,
+.message-input {
+  padding: 4px 0;
+  font: inherit;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--main-color);
+  border: 0;
+  border-bottom: 1px solid #5e5e5e;
+  outline: none;
+  background: transparent;
+}
+
+.submit-button button {
+  width: 50%;
+  min-width: 200px;
+  padding: 9px 22px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  background: var(--main-color);
+}
+
+.form_container {
+  display: grid;
+  grid-template:
+    "text text"
+    "surname surname"
+    "name name"
+    "tel tel"
+    "email email"
+    "message message"
+    "button button";
+  gap: 17px;
+}
+
+@media (min-width: 768px) {
+  .form_text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .form_container {
+    grid-template:
+      "text text"
+      "surname surname"
+      "name name"
+      "tel tel"
+      "email email"
+      "message message"
+      "button button";
+  }
+}
+
+@media (min-width: 1024px) {
+  .form_container {
+    grid-template:
+      "text text"
+      "surname name"
+      "tel email"
+      "message message"
+      "button button";
+  }
+}
+
+@media (min-width: 1024px) {
+  .form_text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form_container {
+    grid-template:
+      "text text"
+      "surname name"
+      "tel email"
+      "message message" minmax(120px, auto)
+      "button button"
+      / 5fr 4fr;
+  }
+}
+
+.form_text {
+  margin-top: 0;
+  grid-area: text;
+}
+
+.surname-input {
+  grid-area: surname;
+}
+
+.name-input {
+  grid-area: name;
+}
+
+.tel-input {
+  grid-area: tel;
+}
+
+.email-input {
+  grid-area: email;
+}
+
+.message-input {
+  grid-area: message;
+}
+
+.submit-button {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+}
