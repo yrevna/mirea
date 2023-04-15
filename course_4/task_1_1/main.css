@@ -1,0 +1,56 @@
+:root {
+  --background-color: aliceblue;
+  --h1-color: blue;
+  --main-shadow: 0 0 10px rgba(13, 96, 163, 0.485);
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    color: var(--h1-color);
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: var(--main-shadow);
+  border-radius: 20px;
+}
+
+label {
+    color: var(--h1-color);
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+input {
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 3px 5px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    margin: 15px 0 0 0;
+    padding: 3px 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    color: var(--h1-color);
+    background-color: rgba(0, 119, 255, 0.105);
+    cursor: pointer;
+    font-size: large;
+}
