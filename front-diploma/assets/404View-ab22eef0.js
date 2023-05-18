@@ -1,0 +1,1 @@
+import{o as r,c as s}from"./index-80a0829c.js";const _=(t,e)=>{const c=t.__vccOpts||t;for(const[o,n]of e)c[o]=n;return c},a={},f={class:"text-center"};function l(t,e){return r(),s("h1",f,"Страница не найдена")}const p=_(a,[["render",l]]);export{p as default};

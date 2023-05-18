@@ -1,0 +1,1 @@
+import{_ as e}from"./GoodsList-b9ccdaf3.js";import{o as a,c as t,b as o,F as s,a as r}from"./index-80a0829c.js";import"./CountClicker-4db12542.js";const c=r("h2",{class:"text-center"},"Каталог",-1),f={__name:"CatalogView",setup(_){return(n,m)=>(a(),t(s,null,[c,o(e)],64))}};export{f as default};
